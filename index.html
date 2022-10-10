@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Platzi - Game</title>
+	</head>
+	<body>
+		<div class="game-container">
+			<div class="info">
+				<div class="info__item">
+					<p class="title">Vidas:</p>
+					<p id="health"></p>
+				</div>
+				<div class="info__item">
+					<p class="title">Tiempo:</p>
+					<p id="time"></p>
+				</div>
+				<div class="info__item">
+					<p class="title">Nivel:</p>
+					<p id="level"></p>
+				</div>
+				<div class="info__item">
+					<p class="title">Tiempo récord:</p>
+					<p id="record-time"></p>
+				</div>
+			</div>
+			<canvas id="game"></canvas>
+			<div class="buttons">
+				<button id="pause" class=""><span></span></button>
+				<button id="power" class=""><span></span></button>
+			</div>
+		</div>
+		<div class="links-container">
+			<div class="links-container__item inactive" id="menu">
+				<a href="./index.html">Menú</a>
+			</div>
+			<div class="links-container__item inactive" id="restart">
+				<a href="./play.html">Reiniciar</a>
+			</div>
+		</div>
+		<script type="module" src="/src/main.ts"></script>
+	</body>
+</html>
